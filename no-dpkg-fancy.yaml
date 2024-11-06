@@ -1,0 +1,12 @@
+---
+- name: Disable apt fancy progress bar
+  hosts: localhost
+  become: true
+  tasks:
+    - name: Set Dpkg::Process-Fancy \"0\"
+      copy:
+        dest: /etc/apt/apt.conf.d/99progressbar
+        owner: root
+        group: root
+        mode: "0644"
+        content: 'Dpkg::Progress-Fancy "0";'

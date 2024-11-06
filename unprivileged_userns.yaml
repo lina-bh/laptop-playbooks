@@ -1,0 +1,8 @@
+- name: Allow unprivileged user namespaces
+  hosts: localhost
+  become: true
+  tasks:
+    - name: Set unprivileged user namespace sysctl
+      ansible.posix.sysctl:
+        name: kernel.apparmor_restrict_unprivileged_userns
+        value: "0"

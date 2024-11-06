@@ -1,0 +1,8 @@
+- name: Allow unprivileged dmesg(8)
+  hosts: localhost
+  become: true
+  tasks:
+    - name: Set kernel.dmesg_restrict=0
+      ansible.posix.sysctl:
+        name: kernel.dmesg_restrict
+        value: "0"
