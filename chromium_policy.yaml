@@ -1,0 +1,27 @@
+SearchSuggestEnabled: false
+DefaultSearchProviderSearchURL: "https://duckduckgo.com/?q={searchTerms}"
+ExtensionInstallForcelist:
+  - "aeblfdkhhhdcdjpifhhbdiojplfjncoa" # 1password
+  - "ddkjiahejlhfcafbddmgiahcphecmpfh" # ubo lite
+  - "cimiefiiaegbelhefglklhhakcgmhkai" # plasma integration
+ExtensionManifestV2Availability: 2 # enabled
+PasswordManagerEnabled: false
+AutofillAddressEnabled: false
+AutofillCreditCardEnabled: false
+AutoplayAllowed: false
+BatterySaverModeAvailability: 1
+BrowserLabsEnabled: false
+DomainReliabilityAllowed: false
+HighEfficiencyMode: true
+MemorySaverModeSavings: 2 # max
+NTPCardsVisible: false
+# PaymentMethodQueryEnabled: false
+SpellCheckServiceEnabled: false
+PrivacySandboxAdMeasurementEnabled: false
+PrivacySandboxAdTopicsEnabled: false
+PrivacySandboxSiteEnabledAdsEnabled: false
+InsecurePrivateNetworkRequestsAllowedForUrls:
+  - "[*.]lamancha-alhena.ts.net"
+SafeBrowsingProtectionLevel: 0 # off
+RestoreOnStartup: 1 # restore session
+DefaultSensorsSetting: 2

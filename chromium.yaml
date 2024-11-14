@@ -1,0 +1,13 @@
+- name: Install chromium policies
+  hosts: localhost
+  become: true
+  tasks:
+    - name: Write policy file
+      copy:
+        dest: /etc/chromium/policies/managed/99_custom.json
+        content: |
+          {{
+          lookup('file', './chromium_policy.yaml')
+          | from_yaml
+          | to_json
+          }}
